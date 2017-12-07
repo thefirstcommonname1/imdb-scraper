@@ -3,7 +3,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var path = require('path');
 var bodyParser = require('body-parser');
-
+var port = process.env.PORT || 3000;
 var app = express();
 
 var title, image, rating;
@@ -58,6 +58,6 @@ app.get('/scrape', function(req, res) {
     'json': json
   });
 })
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("Listening on port 3000...");
 });
