@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Imdb Scraper</title>
+    <style>
+    input[type=text] {
+        width: 20em;
+        box-sizing: border-box;
+        border: none;
+        font-size: 64px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        text-align: center;
+        margin-top: 30px;
+        color: #acaeaf;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+
+    #container {
+      text-align: center
+    }
+    ::placeholder {
+      color: #acaeaf;
+    }
+    </style>
+  </head>
+  <body>
+    <div id = "container">
+    <img src="scrape.jpg" alt="Scrape bot" height="200em" width="200em">
+    <form action='/' method="POST">
+      <input type="text" name="search" placeholder="Imdb Number...">
+    </form>
+    <div>
+  </body>
+</html>
